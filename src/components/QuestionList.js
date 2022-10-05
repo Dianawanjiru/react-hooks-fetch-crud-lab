@@ -20,10 +20,13 @@ function QuestionList({onDeleteQuestion,onUpdateAnswer}) {
   return (
     <section>
       <h1>Quiz Questions</h1>
-      <ul>{questions.map((question)=>(<QuestionItem  key={question.id}
+      <ul>{questions.map((question)=>(
+      <QuestionItem  
+      key={question.id}
             question={question}
             onDelete={onDeleteQuestion}
-            onUpdateAnswer={onUpdateAnswer}/>))}
+            onUpdateAnswer={onUpdateAnswer}/>
+            ))}
           </ul>
     </section>
   );
