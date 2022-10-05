@@ -32,8 +32,10 @@ function App() {
   return (
     <main>
       <AdminNavBar onChangePage={setPage} />
-      {page === "Form" ? <QuestionForm onAddQuestion={addNewQuestion} /> : <QuestionList onDeleteQuestion={handleDeleteQuestion}
-          onUpdateAnswer={updateCorrectAnswer} />}
+      {page === "Form" ? (
+      <QuestionForm onAddQuestion={addNewQuestion} /> ): 
+      ( <QuestionList onDeleteQuestion={handleDeleteQuestion}
+          onUpdateAnswer={updateCorrectAnswer} />)}
     </main>
   );
 }
