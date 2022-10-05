@@ -103,7 +103,7 @@ function QuestionForm({onAddQuestion}) {
             <option value="3">{formData.answer4}</option>
           </select>
         </label>
-        <button type="submit"  >Add Question</button>
+        <button type="submit" onClick={onAddQuestion}  >Add Question</button>
       </form>
     </section>
   );
