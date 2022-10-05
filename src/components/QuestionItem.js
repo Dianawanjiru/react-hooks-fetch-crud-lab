@@ -15,6 +15,7 @@ function QuestionItem({ question,onDeleteQuestion, onUpdateAnswer}) {
     .then(resp => resp.json())
     .then(() => onDeleteQuestion(question))
   }
+  
   function updateCorrectAnswer(event) {
           
     fetch(`http://localhost:4000/questions/${question.id}`, {
